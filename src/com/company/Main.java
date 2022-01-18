@@ -18,6 +18,6 @@ public class Main {
         if (fullName2.contains("ё")) {
             fullName2 = fullName2.replace("ё", "е");
         }
-        System.out.println(fullName2);
+        System.out.println("Данные ФИО сотрудника — " + fullName2);
     }
 }
