@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Locale;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,5 +12,7 @@ public class Main {
         lastName = lastName + ' ';
         String fullName = lastName + firstName + middleName;
         System.out.println("ФИО сотрудника — " + fullName);
+        String fullName1 = fullName.toUpperCase();
+        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullName1);
+        }
     }
-}
