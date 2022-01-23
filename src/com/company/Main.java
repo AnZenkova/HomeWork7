@@ -39,5 +39,18 @@ public class Main {
         System.out.println("Имя сотрудника —" + firstName);
         System.out.println("Фамилия сотрудника — " + lastName);
         System.out.println("Отчество сотрудника —" + middleName);
+        // 6 задание
+        String fullName6 = "ivanov ivan ivanovich";
+        char[] arr6 = fullName6.toCharArray();
+        int z = 0;
+        fullName6 = fullName6.substring(z,z+1).toUpperCase() + fullName6.substring(z+1);
+        for (int i = 0; i < fullName6.length(); i++) {
+            if (arr6[i] == ' ') {
+                z = i + 1;
+                fullName6 = fullName6.substring(0,z) + fullName6.substring(z,z+1).toUpperCase() + fullName6.substring(z+1);
+            }
+        }
+        System.out.println(fullName6);
     }
+
 }
