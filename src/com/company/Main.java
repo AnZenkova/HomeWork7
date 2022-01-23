@@ -19,5 +19,25 @@ public class Main {
             fullName2 = fullName2.replace("ё", "е");
         }
         System.out.println("Данные ФИО сотрудника — " + fullName2);
+        // 5 задание
+        String fullName3 = "Ivanov Ivan Ivanovich";
+        char[] arr = fullName3.toCharArray();
+        int a = 0;
+        for (int i = 0; i < fullName3.length(); i++) {
+            if (arr[i] == ' ') {
+                String s = fullName3.substring(a, i);
+                System.out.println(s);
+                if (a == 0) {
+                        lastName = s;
+                } else {
+                        firstName = s;
+                }
+                a = i;
+            }
+            middleName = fullName3.substring(a,fullName3.length());
+        }
+        System.out.println("Имя сотрудника —" + firstName);
+        System.out.println("Фамилия сотрудника — " + lastName);
+        System.out.println("Отчество сотрудника —" + middleName);
     }
 }
